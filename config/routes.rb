@@ -35,6 +35,9 @@ Rails.application.routes.draw do
   #     end
   #   end
 
+  get "/signin", to: "sessions#new"
+  post "/signin", to: "sessions#create"
+
   # Example resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales
